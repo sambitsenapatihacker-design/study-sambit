@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study by sambit simple</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="topbar">Study by sambit simple 📚</div>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    /* SPLASH */
+    #splash {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: fadeOut 1s ease forwards;
+      animation-delay: 2s;
+    }
+
+    #splash img {
+      width: 160px;
+      animation: zoomIn 1.5s ease;
+    }
+
+    @keyframes zoomIn {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+
+    .hero {
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      opacity: 0;
+      animation: showContent 1s ease forwards;
+      animation-delay: 2.5s;
+    }
+
+    @keyframes showContent {
+      to { opacity: 1; }
+    }
+
+    .box {
+      background: #020617;
+      margin: 30px auto;
+      padding: 25px;
+      width: 90%;
+      max-width: 350px;
+      border-radius: 15px;
+    }
+
+    button {
+      width: 85%;
+      padding: 12px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .yt { background: red; color: white; }
+    .tg { background: #0088cc; color: white; }
+
+    .info {
+      background: #2f6f8f;
+      padding: 20px;
+      margin-top: 20px;
+    }
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px white;
+}
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #020617;
+  padding: 10px;
+  font-weight: bold;
+}
+body {
+  padding-top: 50px;
+}
+.box, .info {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+.box, .info {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#splash img {
+  border-radius: 50%;
+  box-shadow: 0 0 20px #000;
+}
+<p style="color: yellow;">🔥 New Notes Added Weekly</p>
+
+  </style>
+</head>
+
+<body>
+
+<!-- SPLASH -->
+<div id="splash">
+  <img src="logo.png">
+</div>
+
+<!-- MAIN -->
+<div class="hero">
+  <h1>Study by sambit simple 📚</h1>
+  <p>Easy Notes For Odia Medium Students</p>
+</div>
+
+<div class="box">
+  <button class="yt" onclick="openYT()">YouTube</button>
+  <button class="tg" onclick="openTG()">Telegram</button>
+</div>
+
+<div class="info">
+  <p>Welcome to Study Sambit 📚</p>
+
+  <p>
+  Class 8 Odia Medium Students kan pain<br>
+  Easy Notes + Important Questions
+  </p>
+
+  <p>
+  Join Telegram:<br>
+  https://t.me/sambitgrow
+  </p>
+
+  <p>
+  Watch YouTube:<br>
+  https://youtube.com/@study_sambit
+  </p>
+</div>
+
+<script>
+function openYT() {
+  window.open("https://youtube.com/@study_sambit", "_blank");
+}
+
+function openTG() {
+  window.open("https://t.me/sambitgrow", "_blank");
+}
+function openTG() {
+  window.location.href = "https://t.me/sambitgrow";
+}
+</script>
+<button onclick="openTG()">Join Telegram 🔔</button>
+<h3>👉 “Daily updates yahi milenge”</h3>
+</body>
+</html>
